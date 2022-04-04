@@ -1,0 +1,39 @@
+#Design calculator which will correctly solve all the problems
+# Your program should take operator and two numbers from user and then return the result
+def calculator():
+    print("Welcome to Anshima Sharma's calculator !")
+    print("Which operation you want to perform : ")
+    print("+ Addition ")
+    print("- subtraction ")
+    print("* Multiplication")
+    print("/ Division")
+    print("% Modulus")
+    print("** Power")
+    print("Enter your choice : ")
+    c1=input()
+    x1=int(input("Enter your first number : "))
+    x2=int(input("Enter your second number : "))
+    if c1=="+":
+        print(f" Addition of {x1}+{x2} is {x1+x2}")
+    elif c1=="-":
+        print(f"Subtraction of {x1}-{x2} is {x1-x2}")
+    elif c1=="*":
+        print(f"Multiplication of {x1}*{x2} is {x1*x2}")
+    elif c1=="/":
+        print(f"Division of {x1}/{x2} is {x1/x2}")
+    elif c1=="%":
+        print(f"Mudulo of {x1}%{x2} is {x1%x2}")
+    elif c1=="**":
+        print(f"Power of {x1}**{x2} is {x1**x2}")
+    else:
+        print("Invalid choice")
+
+def again():
+    print("Do youy want to perform operation again : ")
+    c2=input("Enter yes or no : ")
+    if c2=="yes":
+        calculator()
+    else:
+        print("Thankyou")
+calculator()
+again()
