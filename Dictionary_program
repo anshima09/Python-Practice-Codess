@@ -1,0 +1,6 @@
+dict={'Anshima': '09=06-2003',
+      'Kanika' : '06-08-2002',
+      'Abhishek' : '20-11-2002',
+      'Mayank' : '06-09-2002'}
+name=input("Enter the name : ")
+print(dict[name])
