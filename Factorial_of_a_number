@@ -1,0 +1,11 @@
+print("Printing Factorial of a number using recursion ")
+val=int(input("Enter your number :"))
+
+def fact(n):
+    if n==1:
+        return 1
+    else:
+        return (n*fact(n-1))
+
+ans=fact(val)
+print("Factorial of {} is {}".format(val,fact(val)))
