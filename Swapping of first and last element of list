@@ -1,0 +1,14 @@
+#Program to swap first and last elements in a list
+
+def swaping(list):
+    l=len(list)
+    temp=list[0]
+    list[0]=list[l-1]
+    list[l-1]=temp
+    return list
+
+
+list=[12,45,33,18,10]
+print("List before swapping of first and last element : ",list)
+list1=swaping(list)
+print("List after swapping of first and last element : ",list1)
