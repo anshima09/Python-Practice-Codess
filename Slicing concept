@@ -1,0 +1,35 @@
+#Slicing concept
+a="i am Anshima Sharma"
+x=a[3:5]
+y=a[6:9]
+z=a[ :9]
+print(a)
+print(x)
+print(y)
+print(z)
+print("\n")
+
+#splitng
+a=a.split(" ")
+print(a)
+print("\n")
+
+#concatenation
+c="Anshima"
+d="Sharma"
+print(c+" "+d)
+print("\n")
+
+#Multiplication
+mul=3*c
+print(mul)
+star="*"
+q=1*star
+w=2*star
+e=3*star
+print(q+"\n"+w+"\n"+e)
+
+#star pattern with loop
+num=int (input("Enter no of stars : "))
+for i in range(num+1):
+    print (i*star)
