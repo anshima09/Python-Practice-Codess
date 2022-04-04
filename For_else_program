@@ -1,0 +1,7 @@
+#Program to use for else
+
+for i in range(0,10):
+    print(i)
+
+else:
+    print("Thankyou !")
