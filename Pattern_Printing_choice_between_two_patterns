@@ -1,0 +1,20 @@
+print("Pattern Printing")
+n=int(input("Enter number of lines "))
+print("Which pattern you want to print : ")
+print("0. up triangle star pyramid")
+print("1. Down triangle star pyramid")
+print("Enter Your choice between 0 and 1 : ")
+choice=int(input())
+choice1=bool(choice)
+if choice1==True:
+    for i in range(0,n):
+        for j in range(0,i+1):
+            print("*",end=" ")
+        print(end="\n")
+elif choice1==False:
+    for i in range(n+1,0,-1):
+        for j in range(0,i-1):
+            print("*",end=" ")
+        print(end="\n")
+else:
+    print("Invalid choice")
