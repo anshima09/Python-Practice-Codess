@@ -1,0 +1,11 @@
+# Print Length of a particular string
+
+string="I am Anshima Sharma"
+length=len(string)
+
+print("Length of string : ",length)
+print("Length of string : "+str(length))
+print("Length of strinh : {}".format(length))
+
+for i in range(length):
+    print(i)
