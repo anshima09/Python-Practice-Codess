@@ -1,0 +1,91 @@
+#Health Management Systeem
+# 3 clients -- Anshima,Abhishek,Anshuman
+#Total 6 files
+#write a function that when executed takes as input client_name
+# one more function to retrieve excersise and food for any client
+import datetime
+def gettime():
+    return datetime.datetime.now()
+
+def check(x):
+    if x==1:
+        c1=int(input("Enter 1 for excercise and food : "))
+        if c1==1:
+            val=input("Enter here : ")
+            with open("Ansh-Exercise.txt","a") as Ex:
+                Ex.write(str([str(gettime())])+":"+val+"\n")
+            print("Succesfully written")
+        elif c1==2:
+            val=input("Enter here : ")
+            with open("Ansh-Food.txt","a") as Fd:
+                Fd.write(str([str(gettime())])+":"+val+"\n")
+    elif x==2:
+          c1=int(input("Enter 1 for excercise and food "))
+          if c1==1:
+            val=input("Enter here : ")
+            with open("Abhi-Exercise.txt","a") as Ex:
+                Ex.write(str([str(gettime())])+":"+val+"\n")
+            print("Succesfully written")
+          elif c1==2:
+            val=input("Enter here : ")
+            with open("Abhi-Food.txt","a") as Fd:
+                Fd.write(str([str(gettime())])+":"+val+"\n")
+    elif x==3:
+          c1=int(input("Enter 1 for excercise and food "))
+          if c1==1:
+            val=input("Enter here : ")
+            with open("Anshu-Exercise.txt","a") as Ex:
+                Ex.write(str([str(gettime())])+":"+val+"\n")
+            print("Succesfully written")
+          elif c1==2:
+            val=input("Enter here : ")
+            with open("Anshu-Food.txt","a") as Fd:
+                Fd.write(str([str(gettime())])+":"+val+"\n")
+    else :
+        print("Invalid Choice ")
+
+def retrieve(x):
+    if x==1:
+        c1=int(input("Enter 1 for excersie and food : "))
+        if c1==1:
+            with open("Ansh-Excerise.txt") as Ex:
+                      for i in Ex:
+                          print(i, end="")
+        elif c1==2:
+            with open("Ansh-Food.txt") as Fd:
+                for i in Fd:
+                    print(i,end="")
+    elif x==2:
+        c1=int(input("Enter 1 for excersie and food : "))
+        if c1==1:
+            with open("Abhi-Excerise.txt") as Ex:
+                for i in Ex:
+                    print(i, end="")
+        elif c1==2:
+            with open("Abhi-Food.txt") as Fd:
+                for i in Fd:
+                    print(i,end="")
+    elif x==3:
+        c1=int(input("Enter 1 for excersie and food : "))
+        if c1==1:
+            with open("Anshu-Excerise.txt") as Ex:
+                      for i in Ex:
+                          print(i, end="")
+        elif c1==2:
+            with open("Anshu-Food.txt") as Fd:
+                for i in Fd:
+                    print(i,end="")
+    else:
+        print("Invalid Choice")
+
+
+#main Function
+print("Health Management System")
+user=int(input("Enter 1 for log the value and 2 for retrive the value : "))
+if user==1:
+    a=int(input("Enter 1 for Anshima 2 for Abhishek 3 for ANshuman : "))
+    check(a)
+else:
+    a=int(input("Enter 1 for Anshima 2 for Abhishek 3 for ANshuman : "))
+    retrieve(a)
+        
