@@ -1,0 +1,38 @@
+# Program to check whether a number is odd or even
+"""
+num=input("Enter your number : ")
+if num==0:
+    print("Number is zero ")
+elif num%2:
+    print("Number is even")
+else:
+    print("Number is odd")
+print("This will give error")
+"""
+
+num=int(input("Enter your number : "))
+if num==0:
+    print("Number is zero ")
+elif num%2==0:
+    print("Number is even")
+else:
+    print("Number is odd")
+
+
+num1=int(input("Enter your number : "))
+print(num1%2)
+if num1==0:
+    print("Number is zero ")
+elif num1%2==0:
+    print("Number is even")
+else:
+    print("Number is odd")
+
+num2=float(input("Enter your number : "))
+print(num2%2)
+if num2==0:
+    print("Number is zero ")
+elif num2%2==0:
+    print("Number is even")
+else:
+    print("Number is odd")
