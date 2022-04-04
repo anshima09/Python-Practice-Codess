@@ -1,0 +1,19 @@
+numeral=["1","2","3","4","5","6","7","8","9","0"]
+operator=["+","-","/","*","^","%"]
+inpp=input("Enter a expression")
+print("Input=",inpp)
+operand=""
+expression=[]
+for i in inpp:
+    if i in numeral:
+        operand=operand+i
+    elif i in operator:
+        expression.append(operand)
+        expression.append(i)
+        operand=""
+    else:
+        print("Invalid character")
+        break
+expression.append(operand)
+print("Input (in list)=",expression)
+
