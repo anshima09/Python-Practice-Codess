@@ -1,0 +1,14 @@
+print("Checking whether a number is armstrong number or not ")
+temp=int(input("Enter your number : "))
+sums=0
+num=temp
+while(num!=0):
+    
+    rem=num%10
+    sums+=rem*rem*rem
+    num=num//10
+
+if temp==sums:
+    print(temp," is an Armstrong Number ")
+else:
+    print(temp,"is not an Armstrong Number")
