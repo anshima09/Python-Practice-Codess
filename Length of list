@@ -1,0 +1,49 @@
+#Program to find length of list
+#Method number 1
+list=[12,56,32,90,5]
+print("The first list is : ",list)
+
+counter=0
+for i in list:
+    counter+=1
+
+print("Length of first string : ",counter)
+print("--------------------------------------------------------------------")
+
+
+#Method number 2
+list1=[]
+list1.append("Anshima")
+list1.append("Kanika")
+list1.append("Mayank")
+list1.append("Abhishek")
+
+print("The second list is : ",list1)
+print("Length of second string : ",len(list1))
+print("---------------------------------------------------------------------")
+
+
+#Method number 3
+list2=[1,2,3,4,5,6,7,8,9]
+print("The third string is : ",list2)
+l=len(list2)
+print("Length of third string : ",l)
+print("---------------------------------------------------------------------")
+
+#Method number 4
+list3 = [ 1, 4, 5, 7, 8 ]
+ 
+
+print ("The list is : " + str(list3))
+ 
+
+counter = 0
+for i in list3:
+     
+    
+    counter = counter + 1
+ 
+print ("Length of list using naive method is : " + str(counter))
+#Method number 5
+
+
