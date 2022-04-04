@@ -1,0 +1,24 @@
+# Program to find maximum of two numbers in python
+
+#Method 1
+def maximum(x,y):
+    if x>y:
+        return x
+    else:
+        return y
+
+a=10
+b=12
+print("Maximum number is : ",maximum(a,b))
+
+#Method 2
+a=56
+b=44
+print("Maximum number is : ",a if a >= b else b)
+
+
+#Method 3
+a=76
+b=90
+maximum=max(a,b)
+print("Maximum number is : ",maximum)
