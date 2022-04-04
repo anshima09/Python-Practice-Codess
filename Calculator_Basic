@@ -1,0 +1,43 @@
+print("WELCOME TO ANSHIMA'S CALCULATOR")
+print("Which type of value you want to enter : ")
+print("1. Integer value ")
+print("2. Float value ")
+c1=int(input("Enter your choice : "))
+if c1==1:
+       x1=int(input("Enter first integer value : "))
+       x2=int(input("Enter second integer value : "))
+elif c1==2:
+    x1=float(input("Enter first float value : "))
+    x2=float(input("Enter second float value : "))
+else:
+    print("Invalid value")
+print("Which operation you want to perform : ")
+print("1. Addition ")
+print("2. Subtraction ")
+print("3. Multiplication ")
+print("4. Division")
+print("5. Modulus ")
+print("6. Square root ")
+print("7. Cube root ")
+c2=int(input("Enter your choice : "))
+
+def add(a,b):
+    return (a+b)
+def sub(a,b):
+    return (a-b)
+def mul(a,b):
+    return (a*b)
+def div(a,b):
+    return (a/b)
+def mod(a,b):
+    return (a%b)
+if c2==1:
+    print("Addition of",x1,"+",x2,"=",add(x1,x2))
+elif c2==2:
+    print("Subtraction of",x1,"-",x2,"=",sub(x1,x2))
+elif c2==3:
+    print("Multiplication of",x1,"*",x2,"=",mul(x1,x2))
+elif c2==4:
+    print("Division of",x1,"/",x2,"=",div(x1,x2))
+else:
+    print("Modulus of",x1,"%",x2,"=",mod(x1,x2))
