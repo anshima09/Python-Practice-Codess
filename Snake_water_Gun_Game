@@ -1,0 +1,46 @@
+import random
+print("Snake Water Gun Game !")
+mylist=["Snake","Water","Gun"]
+
+print("1) Snake")
+print("2) Water")
+print("3) Gun")
+print("Enter your choice : ")
+user2=input()
+i=1
+C_point=0
+H_point=0
+while i<10:
+    user1=random.choice(mylist)
+    if user1==user2:
+       print("No Winner")
+    elif user1=="Snake" or user2=="Water":
+       print("Computer is getting one point")
+       C_point+=1
+    elif user1=="Snake" and user2=="Gun":
+       print("You are getting one point")
+       H_point+=1
+    elif user1=="Gun" and user2=="Water":
+       print("You are getting one point")
+       H_point+=1
+    elif user1=="Gun" and user2=="Snake":
+       print("Computer winsComputer is getting one point")
+       C_point+=1
+    elif user1=="Water" and user2=="Snake":
+       print("You are getting one point")
+       H_point+=1
+    elif user1=="Water" and user2=="Gun":
+       print("Computer is getting one point")
+       C_point+=1
+    else:
+       print("Invalid Values")
+       
+
+
+if C_point>H_point:
+    print("You loss ,Computer wins this game !")
+elif C-point<H_point:
+    print("Congrations you win this game")
+else:
+    print("There is a tie no one is winner")
+    
