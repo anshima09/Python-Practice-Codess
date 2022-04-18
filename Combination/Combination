@@ -1,0 +1,8 @@
+from function import fact
+n=int(input("Enter value of n : "))
+r=int(input("Enter value of r : "))
+d=(n-r)*r
+p=fact(n)
+q=fact(d)
+combination=p/q
+print("Combination : ",combination)
