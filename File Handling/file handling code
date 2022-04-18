@@ -1,0 +1,13 @@
+print("Program for the concept of file handling ")
+
+f=open("myfile.txt","w")
+f.write("MY NAME IS ANSHIMA SHARMA PURSUING MTECH FROM IIPS DAVV INDORE")
+f.write("\n")
+x="MY FATHER NAME IS SANJAY SHARMA AND MOTHER NAME IS RANI SHARMA"
+f.write(x)
+f.close()
+
+f=open("myfile.txt","r")
+y=f.read()
+print(y)
+f.close()
