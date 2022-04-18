@@ -1,0 +1,15 @@
+print("Program to change the case of a string ")
+def swap_case(s):
+    string = ""
+    for i in range(0,len(s)):
+        if(s[i].isupper()):
+            string += s[i].lower()
+        else:
+            string += s[i].upper()
+    return string
+
+if __name__ == '__main__':
+    s = input()
+    result = (swap_case(s))
+    print (result)
+
