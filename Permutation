@@ -1,0 +1,8 @@
+from function import fact
+n=int(input("Enter value of n : "))
+r=int(input("Enter value of r : "))
+d=n-r
+p=fact(n)
+q=fact(d)
+permutation=p/q
+print("Permutation : ",permutation)
